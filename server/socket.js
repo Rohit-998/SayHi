@@ -38,7 +38,7 @@ const setupSocket = (server) => {
     const userId = socket.handshake.query.userId;
     if (userId) {
       userSocketMap.set(userId, socket.id);
-    //   console.log(`User ${userId} connected with socket ID: ${socket.id}`);
+  
     } else {
       console.log("User ID not provided in handshake query");
     }
